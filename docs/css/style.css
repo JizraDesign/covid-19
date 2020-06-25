@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+}
+.cont__header{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    justify-content: flex-start;
+}
+.imagen{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title a{
+    font-size: 12px;
+}
+.cont__principal{
+    width: 100%;
+    height: calc(100% - 50px);
+}
+/*--------------------------------mensaje importante---------------------------------*/
+.importante{
+    align-self: start;
+    width: 100%;
+    min-height: 50vh;
+    z-index: 10;
+}
+.title__important{
+    width: 100%;
+    padding: 5px;
+}
+.title__important span{
+    color: rgb(255, 0, 0);
+}
+.importante p{
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.data{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px;
+    background:  radial-gradient(ellipse at center, rgba(0,0,0,.83) 0%, rgba(0,0,0,.75) 12%, rgba(13,13,13,0.59) 25%, rgba(26,26,26,0.47) 39%, rgba(15,15,15,0.58) 50%, rgba(13,13,13,0.57) 51%, rgba(5,5,5,0.69) 60%, rgba(0,0,0,0.75) 76%, rgba(0,0,0,0.83) 91%, rgba(0,0,0,1) 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.data__cont{
+    position: relative;
+    border: solid 2px gray;
+    border-bottom: solid 1px gray;
+    width: 100%;
+    max-width: 480px;
+    min-width: 380px;
+    margin-bottom: 30px;
+}
+.data__cont>div{
+    width: 50%;
+}
+[class ^='data__celda']{
+    padding: 5px 5px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.data__celda{
+    border-right: 1px solid gray;
+}
+.data__celda-numero{
+    border-left: 1px solid gray;
+}
+.importante img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.countri{
+    width: 100%;
+}
+#countri, a{
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+    display: inline-block;
+}
+.social-bar{
+    z-index: 100;
+}
+@media (min-width:600px){
+    .importante{
+        align-self:center;
+        height: 100%;
+    }
+    .title__important{
+        padding-left: 30%;
+    }
+    .importante p{
+        padding-left: 33.3%;
+    }
+    .countri{
+        padding-left: 66%;
+    }
+}
